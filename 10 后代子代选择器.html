@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	/* 需求：选出一级菜单 */
+	/* 后代选择器 */
+	ul li a {
+		color: red;
+	}
+	/* 子代选择器  子指的是亲儿子，此时的a一定是li的亲儿子 */
+	ul li > a {
+		color: blue;
+	}
+	</style>
+</head>
+<body>
+	<ul>
+		<li>
+			<a href="#">一级菜单</a>
+			<div>
+				<a href="#">二级菜单</a>
+				<a href="#">二级菜单</a>
+				<a href="#">二级菜单</a>
+			</div>
+		</li>
+	</ul>
+</body>
+</html>

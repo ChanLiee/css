@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<table width="400" height="100" border="1">
+		<tr>
+			<td>123</td>
+			<td>abc</td>
+			<td>abc</td>
+		</tr>
+		<tr><!-- 横向合并 -->
+			<td colspan="2">123</td>
+			<td>测试</td>
+		</tr>
+		<tr>
+			<td>123</td>
+			<td>abc</td>
+			<td>abc</td>
+		</tr>
+	</table>
+	<hr>
+	<table width="400" height="100" border="1">
+		<tr>
+			<td>123</td>
+			<td>abc</td>
+			<td rowspan="3">abc</td><!-- 纵向合并 -->
+		</tr>
+		<tr><!-- 横向合并 -->
+			<td>123</td>
+			<td>123</td>
+		</tr>
+		<tr>
+			<td>123</td>
+			<td>abc</td>
+		</tr>
+	</table>
+</body>
+</html>

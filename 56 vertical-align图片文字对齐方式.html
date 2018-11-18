@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		img {
+			vertical-align: baseline; /* 默认 */
+			vertical-align: middle; /* 水平居中对齐 */
+			vertical-align: top; /* 顶部对齐 */
+			/* 去除图片底侧的空白缝隙 */
+			/* 1. 设置vertical-align 为middle | top，让图片和文字不要基线对齐 */
+			/* display: block; */
+			/* 2. 设置img display: block; */
+		}
+		div {
+			border: 2px solid red;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<img src="images/tudou.jpg" alt="">
+		中文 English
+	</div>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	* {
+		margin: 0;
+		padding: 0;
+	}
+	.box {
+		width: 900px;
+		margin: 0 auto;
+	}
+	.top {
+		height: 80px;
+		background-color: pink;
+	}
+	.top-inner {
+		height: 80px;
+	}
+	.banner {
+		height: 150px;
+		background-color: #ccc;
+	}
+	.banner li {
+		float: left;
+		width: 217px;
+		height: 150px;
+		margin-right: 10px;
+		list-style: none;
+		background-color: skyblue;
+	}
+	.banner .four {
+		margin-right: 0;
+		float: right;
+	}
+	/* 902*502 含边框 */
+	.main {
+		height: 500px;
+	}
+	/* 290*500 */
+	.left {
+		width: 288px;
+		height: 498px;
+		border: 1px solid red;
+		float: left;
+	}
+	/* 600*500 */
+	.right {
+		width: 598px;
+		height: 498px;
+		border: 1px solid red;
+		float: right;
+	}
+	.footer {
+		height: 120px;
+		border: 1px solid blue;
+	}
+	</style>
+</head>
+<body>
+	<div class="top">
+		<div class="top-inner box">123</div>
+	</div>
+	<div class="banner box">
+		<ul>
+			<li class="one">1</li>
+			<li class="two">2</li>
+			<li class="three">3</li>
+			<li class="four">4</li>
+		</ul>
+	</div>
+	<div class="main box">
+		<div class="left">left</div>
+		<div class="right">right</div>
+	</div>
+	<div class="footer box"></div>
+</body>
+</html>

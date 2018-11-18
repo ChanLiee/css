@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	/* 如果是浮动，则bottom上移，但是其中的文字并不会上移，如果是绝对定位，则top完全脱标，bottom盒子以及文字都上移 */
+	.top {
+		width: 200px;
+		height: 210px;
+		background-color: pink;
+		/* float: left;  */
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+	.bottom {
+		width: 210px;
+		height: 200px;
+		background-color: purple;
+	}
+	</style>
+</head>
+<body>
+	<div class="top">123123</div>
+	<div class="bottom">adsfadfasdfasdfasdf</div>
+</body>
+</html>

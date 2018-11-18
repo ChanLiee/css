@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		body {
+			background: url(images/wx.jpg) repeat-x;
+		}
+		.nav li {
+			list-style: none;
+			float: left;
+			padding: 0 10px; /* 上下0，左右10 */
+		}
+		.nav li a {
+			/*1. a 左边放 左圆角   但是文字需要往右走 15px*/
+			height: 33px;
+			line-height: 33px;
+			display: inline-block; /* 让高度生效 */
+			color: #fff;
+			text-decoration: none;
+			background: url(images/to.png) no-repeat;
+			padding-left: 15px;
+		}
+		.nav li a span {
+			/*2. span 右边放右圆角   但是文字需要往左走 15px*/
+			background: url(images/to.png) no-repeat right;
+			height: 33px;
+			display: inline-block;
+			padding-right: 15px;
+		}
+		.nav li a:hover,
+		.nav li a:hover span {
+			background-image: url(images/ao.png);/* 只改背景图片，其他背景属性不变，不能直接用background */
+		}
+	</style>
+</head>
+<body>
+	<ul class="nav">
+		<li><a href="#"><span>首页</span></a></li>
+		<li><a href="#"><span>三个字</span></a></li>
+		<li><a href="#"><span>新闻客户端</span></a></li>
+	</ul>
+</body>
+</html>

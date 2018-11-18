@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	* {
+		margin: 0;
+		padding: 0;
+	}
+	/* 上边框宽3px，下边框宽1px，盒子总高度为53px */
+	.nav {
+		height: 50px;
+		border-top: 3px solid #FF8500;
+		border-bottom: 1px solid #EDEEF0;
+		background-color: #FCFCFC;
+	}
+	.nav a {
+		height: 50px;
+		line-height: 50px;
+		display: inline-block;/* 使height生效 */
+		color: #4c4c4c;
+		text-decoration: none;
+		padding: 0 18px; /* 上下0 左右18px */
+		font-size: 14px;
+	}
+	.nav a:hover {
+		background-color: #edeef0;
+		color: #ff8400;
+	}
+	</style>
+</head>
+<body>
+	<div class="nav">
+		<a href="#">首页</a>
+		<a href="#">新闻客户端</a>
+		<a href="#">设为首页</a>
+	</div>
+</body>
+</html>

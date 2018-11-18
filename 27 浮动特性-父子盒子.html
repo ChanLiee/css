@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	/* 盒子大小500*500 */
+	.father {
+		width: 400px;
+		height: 400px;
+		background-color: pink;
+		padding: 50px;
+	}
+	/* 浮到右上角，但不会超过padding值，即不能超过padding的边界 */
+	.son {
+		width: 200px;
+		height: 200px;
+		background-color: purple;
+		float: right;
+	}
+	</style>
+</head>
+<body>
+	<div class="father">
+		<div class="son"></div>
+	</div>
+</body>
+</html>

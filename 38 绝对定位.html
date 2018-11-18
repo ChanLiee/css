@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	body {
+		height: 2000px;
+	}
+	div {
+		width: 100px;
+		height: 100px;
+	}
+	/*不占位置 跟浮动一样, 跑到屏幕右下角，与body的高度无关*/
+	.top {
+		background-color: pink;
+		position: absolute;  
+		right: 0;
+		bottom: 0;
+	}
+	.bottom {
+		background-color: purple;
+		width: 110px;
+	}
+	</style>
+</head>
+<body>
+	<div class="top"></div>
+	<div class="bottom"></div>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+		}
+		.comment {
+			width: 908px;
+			height: 310px;
+			border: 1px solid #ccc;
+			margin: 100px auto;
+			padding-left: 30px;/*  撑开内容与左边框的距离 */
+		}
+		.comment h4 {
+			margin-top: 20px;
+			height: 45px; /* 用行高撑开与textarea的距离 */
+		}
+		.comment h4 a {
+			color: #f00;
+			font-weight: normal;
+		}
+		.comment textarea{
+			width: 842px;
+			height: 108px;
+			color: #ccc;
+			padding: 10px;
+		}
+		.comment input {
+			margin-top: 20px;
+		}
+		.comment p {
+			color: #f00;
+			font-size: 14px;
+			margin-top: 10px;
+		}
+	</style>
+</head>
+<body>
+	<div class="comment">
+		<h4>评论 <img src="./images/star.png"> <a href="#">我要评论</a></h4>
+		<textarea>请输入你的评论</textarea>
+		<input type="image" src="./images/btn_tj.png">
+		<p>暂时没有评论</p>
+	</div>
+</body>
+</html>

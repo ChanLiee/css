@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+		}
+		.slider {
+			width: 520px;
+			height: 280px;
+			margin: 100px auto;
+			position: relative;
+		}
+		.slider .arrow-l,
+		.slider .arrow-r {
+			width: 24px;
+			height: 36px;
+			top: 50%;
+			margin-top: -18px;
+			position: absolute;
+		}
+		.slider .arrow-l {
+			left: 0;
+		}
+		.slider .arrow-r {
+			right: 0;
+		}
+		.circle {
+			width: 65px;
+			height: 13px;
+			border-radius: 6px;
+			position: absolute;
+			bottom: 15px;
+			left: 50%;
+			margin-left: -33px;
+			background-color: rgba(255, 255, 255, .3);
+		}
+		.circle li {
+			width: 9px;
+			height: 9px;
+			float: left;
+			border-radius: 50%;
+			background-color: #B7B7B7;
+			list-style: none;
+			margin: 2px;
+		}
+		.circle .current {
+			background-color: #f40;
+		}
+	</style>
+</head>
+<body>
+	<div class="slider">
+		<a href="#"><img src="./images/taobao.jpg"></a>
+		<a href="#" class="arrow-l"><img src="./images/left.png"></a>
+		<a href="#" class="arrow-r"><img src="./images/right.png"></a>
+		<!-- 下面的小点 -->
+		<ul class="circle">
+			<li class="current"></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+	</div>
+</body>
+</html>

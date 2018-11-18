@@ -1,0 +1,256 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	background-color: #fafafa;
+}
+li {
+	list-style: none;
+}
+.clearfix::after {
+	content: "";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+.clearfix {
+	*zoom: 1;
+}
+
+/* 顶部导航栏开始 */
+.header {
+	height: 100px;
+	background-color: #fff;
+}
+.inner {
+	width: 1200px;
+	height: 100px;
+	margin: 0 auto; /* 版心居中 */
+	line-height: 100px; /* 文字居中显示，可以继承给a */
+}
+.logo {
+	float: left;
+}
+.nav {
+	float: right;
+}
+.nav ul {
+	overflow: hidden;
+}
+.nav li {
+	float: left;
+	margin: 0 20px; /* 上下0，左右20px，撑开导航栏间距 */
+}
+.nav li a {
+	color: #333;
+	text-decoration: none; /* a的下划线 */
+}
+.nav li a:hover {
+	color: #2288f6;
+}
+
+/* banner STAR */
+.banner {
+	height: 620px;
+	background: url(../images/banner.jpg) no-repeat top center;
+}
+/* banner END */
+.service {
+	width: 1055px;
+	height: 660px;
+	position: relative;
+	margin: 75px auto 0; /* 版心居中 */
+}
+.service .service-hd{
+	border-top: 1px solid #ccc;
+	margin: 0 25px;
+}
+.service .service-hd h3 {
+	width: 167px;
+	height: 46px;
+	margin: -15px auto 0; /* 不需要定位也能实现 */
+}
+.service-hd p {
+	font-size: 12px;
+	color: #666;
+	line-height: 26px;
+	text-align: center;
+	width: 830px;
+	margin: 15px auto 0;
+}
+.service-bd {
+	margin-top: 40px;
+}
+.service-bd li {
+	width: 320px;
+	height: 510px;
+	background-color: #fff;
+	float: left;
+	border: 1px solid #e7e8e9;
+}
+.service-bd li img {
+	width: 248px;
+	height: 132px;
+	margin: 40px 35px;
+}
+.service-bd li h3 {
+	text-align: center;
+	color: #666;
+	font-weight: normal;
+	height: 40px;
+}
+.service-bd li p {
+	font-size: 12px;
+	color: #666;
+	line-height: 26px;
+	width: 235px;
+	margin: 0 auto;
+}
+.service-bd li a {
+	display: block;
+	width: 148px;
+	height: 38px; /* 先转换为block，才能制定宽高 */
+	border: 1px solid #ff9412;
+	margin: 30px auto 0;
+	font-size: 12px;
+	color: #ff9412;
+	line-height: 38px;
+	text-align: center;
+	text-decoration: none;
+	border-radius: 5px;
+}
+.service-bd li a:hover {
+	background-color: #ff9412;
+	color: #fff;
+}
+
+/* case start */
+.case {
+	width: 1055px;
+	margin: 105px auto 0;
+}
+.case .case-hd {
+	border-top: 1px solid #ccc;
+	margin: 0 25px;
+}
+.case .case-hd h3 {
+	width: 167px;
+	height: 45px;
+	margin: -15px auto 0; 不定宽高不能居中对齐
+}
+.case-bd {
+	margin-top: 80px;
+	position: relative;
+}
+.case-bd-m {
+	margin: 0 40px;
+}
+.case li {
+	width: 325px;
+	height: 210px;
+	float: left;
+	position: relative;
+}
+.text {
+	height: 45px;
+	width: 100%;
+	color: #fff;
+	font-size: 12px;
+	background: rgba(0, 0, 0, 0.3);
+	text-align: center;
+	line-height: 45px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+.mask {
+	width: 325px;
+	height: 210px;
+	position: absolute;
+	background-color: pink;
+	top: 0;
+	left: 0;
+	display: none;
+	background: rgba(0,0,0,.5) url(../images/fdj.png) center no-repeat;
+}
+.case li:hover .mask {
+	display: block;
+}
+.left,
+.right {
+	width: 60px;
+	height: 60px;
+	background: rgba(0, 0, 0, .2);
+	text-decoration: none;
+	font-size: 25px;
+	line-height: 60px;
+	text-align: center;
+	color: #fff;
+	border-radius: 50%;
+	position: absolute;
+	top: 50%;  /* 上下居中 */
+	margin-top: -30px;
+}
+.left {
+	left: -90px;
+}
+.right {
+	right: -90px;
+}
+.case a:hover {
+	background: rgba(0, 0, 0, .4);
+}
+/* case end */
+
+/* media start */
+.media-bd {
+	width: 1048px;
+	height: 240px;
+	overflow: hidden;
+	margin-top: 40px;
+}
+.media-bd ul {
+	width: 1060px;
+}
+/* li宽211，高81 */
+.media-bd li {
+	width: 210px;
+	height: 60px;
+	float: left;
+	border-right: 1px dashed #ccc;
+	border-bottom: 1px dashed #ccc;
+	text-align: center;
+	padding-top: 20px;
+}
+/* media end */
+/* footer start */
+.footer {
+	height: 165px;
+	background-color: #212425;
+	margin-top: 100px;
+	overflow: hidden;
+}
+.subbar {
+	color: #f0f1f1;
+	text-align: center;
+	margin-top: 50px;
+	font-size: 14px;
+}
+.subbar a {
+	color: #f0f1f1;
+	text-decoration: none;
+	padding: 0 5px;
+	font-size: 14px;
+}
+.subbar a:hover {
+	color: #2288f6;
+	text-decoration: underline;
+}
+.footer p {
+	text-align: center;
+	color: #888888;
+	margin-top: 30px;
+}
+/* footer end */
